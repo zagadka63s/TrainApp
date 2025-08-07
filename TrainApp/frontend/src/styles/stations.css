@@ -1,0 +1,107 @@
+.stations-container {
+    max-width: 800px;
+    margin: 40px auto 32px auto;
+    padding: 32px 18px 24px 18px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 28px;
+    box-shadow: 0 2px 22px #397be70d;
+}
+
+.stations-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #234378;
+    
+}
+
+.stations-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 22px;
+    margin-top: 28px;
+    list-style: none;
+    padding: 0;
+}
+
+
+.stations-search inpute[type="text"]:focus {
+    border-color:#397be7;
+    outline: none;
+}
+
+
+.station-card {
+    background: #f4f9ff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #397be720;
+    padding: 20px 24px 18px 24px;
+    font-size: 1.09rem;
+    font-weight: 500;
+    transition: transform 0.12s, box-shadow 0.12s;
+    cursor: pointer;
+    border: 1.5px solid #e6edfa;
+}
+
+.station-card:hover {
+    box-shadow: 0 4px 32px #397be728;
+    background: #eaf4ff;
+    transform: translateY(-3px) scale(1.035);
+}
+
+.station-card b {
+    font-size: 1.11em;
+    color: #1a3265;
+}
+
+.stations-loader, .stationds-empty {
+    font-size: 1.1rem;
+    color: #384b6d;
+    padding: 32px 0;
+    text-align: center;
+}
+
+.stations-container input[type="text"] {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 16px;
+    padding: 9px 13px;
+    border-radius: 8px;
+    border: 1.5px solid #aac3e5;
+    font-size: 1rem;
+    background: #f7faff;
+    outline: none;
+    transition: border 0.13s;
+}
+
+.stations-container inpute[type="text"]:focus {
+    border-color: #397be7;
+}
+
+.stations-header-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stations-title {
+    text-align: center;
+    width: 100%;
+}
+
+.stations-search {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto 0 auto;
+}
+
+@media (max-width: 750px) {
+    .stations-container {
+        max-width: 96vw;
+        padding: 16px 7ww;
+    }
+    .stations-title {
+        font-size: 1.5rem;
+    }
+}

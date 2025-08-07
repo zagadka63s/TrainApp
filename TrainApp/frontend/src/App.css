@@ -1,0 +1,335 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: url('/image.jpg') center center/cover no-repeat fixed;
+  min-height: 100vh;
+  /* убери лишний min-height в .home-container */
+}
+
+/* --- HomePage --- */
+.home-container {
+  margin-top : 68px;
+  margin-bottom: 24px;
+  min-height: 74vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.home-card {
+  background: rgba(255,255,255,0.90);
+  border-radius: 28px;
+  box-shadow: 0 8px 38px #274d8b14, 0 1.5px 8px #9dbde833;
+  padding: 48px 36px 36px 36px;
+  max-width: 550px;
+  min-width: 320px;
+  width: 100%;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-title {
+  color: #1a1a1a;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+  text-shadow: 0 2px 18px #fff9;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.home-subtitle {
+  color: #294478;
+  font-size: 1.16rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.search-block {
+  margin-top: 28px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-form {
+  display: flex;
+  gap : 14px;
+  margin-bottom: 5px;
+}
+
+.search-form input,
+.search-form button {
+  font-size: 1rem;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border : 1.5px solid #aac3e5;
+  background: #f6f9ffdd;
+  transition: border 0.15s, box-shadow 0.15s;
+  outline: none;
+}
+
+.search-form input:focus {
+  border: 1.5px solid #397be7;
+  box-shadow: 0 2px 12px #aac3e52a;
+}
+
+.search-form button {
+  background: #397be7;
+  color: #fff;
+  border: none;
+  cursor : not-allowed;
+  font-weigth: 600;
+  transition: background 0.16s, transform 0.1s;
+}
+
+.search-hint {
+  color : #7e88a5;
+  font-size: 0.98rem;
+  margin-top: 0;
+  text-align: left;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 18px;
+  margin: 26px 0 10px 0;
+}
+
+.home-buttons button {
+  background: #397be7;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  box-shadow: 0 2px 16px #274d8b28;
+}
+
+.home-buttons button:hover {
+  background: #2350a2;
+  transform: scale(1.07);
+}
+
+/* Table */
+
+.board-block {
+  background: rgba(255,255,255,0.93);
+  border-radius: 20px;
+  box-shadow: 0 2px 18px #397be715;
+  padding: 24px 30px 18px 30px;
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto 24px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.board-title {
+  font-size: 1.32rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.board-list {
+  list-style: disc;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+.train-route {
+  color: #397be6;
+  font-weight: 500;
+}
+
+.train-time {
+  margin-left: 1.1rem;
+  color: #234;
+  font-size: 1.05em;
+}
+
+.board-hint {
+  font-size: 0.98rem;
+  color: #7e88a5;
+  margin-top: 4px;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(45px);}
+  to   { opacity: 1; transform: translateY(0);}
+}
+
+/* --- Login (и Registration) — форма по центру, с полупрозрачным фоном --- */
+.login-container,
+.auth-form-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.2s;
+}
+
+.login-form,
+.auth-form {
+  background: rgba(255, 255, 255, 0.89);
+  box-shadow: 0 8px 32px 0 rgba(30,60,120,0.16);
+  border-radius: 14px;
+  padding: 40px 36px 32px 36px;
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form h2,
+.auth-form h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #27385c;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"],
+.auth-form input[type="text"],
+.auth-form input[type="password"],
+.auth-form input[type="email"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1.2px solid #aac3e5;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.14s;
+  background: #f7faffc8;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus,
+.login-form input[type="email"]:focus,
+.auth-form input[type="text"]:focus,
+.auth-form input[type="password"]:focus,
+.auth-form input[type="email"]:focus {
+  border-color: #397be7;
+}
+
+.login-form button,
+.auth-form button {
+  width: 100%;
+  background: #397be7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.14s, box-shadow 0.14s;
+  box-shadow: 0 2px 12px #397be71c;
+  margin-top: 10px;
+}
+
+.login-form button:hover,
+.auth-form button:hover {
+  background: #2350a2;
+  box-shadow: 0 4px 20px #2350a26c;
+}
+
+.error {
+  color: #d9244f;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ===== Header ===== */
+.main-header {
+  width: 100%;
+  background: rgba(255,255,255,0.97);
+  box-shadow: 0 2px 14px #214e8822;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.main-nav {
+  width: 92%;
+  max-width: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #214e88;
+  text-decoration: none;
+  margin-right: 22px;
+}
+.nav-links {
+  display: flex;
+  gap: 14px;
+}
+.nav-links a {
+  color: #214e88;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 7px;
+  transition: background 0.14s;
+}
+.nav-links a.active,
+.nav-links a:hover {
+  background: #e9f0fa;
+}
+
+/* ===== Footer ===== */
+.main-footer {
+  width: 100%;
+  background: rgba(255,255,255,0.92);
+  color: #333;
+  font-size: 1rem;
+  padding: 18px 0 14px 0;
+  text-align: center;
+  box-shadow: 0 -2px 12px #397be71a;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+}
+.main-footer a {
+  color: #397be7;
+  text-decoration: underline;
+  margin-left: 8px;
+  font-size: 1.01em;
+}
+
+/* ===== Universal fix for main ===== */
+main {
+  min-height: 100vh;
+  /* чтобы футер всегда был внизу даже при малом контенте */
+  box-sizing: border-box;
+  padding-top: 70px;  /* отступ под header */
+  padding-bottom: 50px; /* отступ под footer */
+  flex: 1 1 auto;
+  width: 100%;
+  display: block;
+}

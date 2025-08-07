@@ -1,0 +1,35 @@
+.trains-container {
+    margin: 40px auto;
+    max-width: 600px;
+    background: rgba(255,255,255,0.96);
+    box-shadow: 0 2px 20px #0055a30c;
+    border-radius: 16px;
+    padding: 36px 30px 28px 30px;
+    min-height: 230px
+}
+
+.trains-title {
+    color: #1a3366;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.train-card {
+    background: #f5f9fc;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px #397be722;
+    margin-bottom: 20px;
+    padding: 16px 22px;
+    font-size: 1.07rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.trains-empty, .trains-loader {
+    color : #949fae;
+    font-size : 1.1rem;
+    text-align: center;
+    margin: 40px 0;
+}

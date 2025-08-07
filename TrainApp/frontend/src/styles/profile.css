@@ -1,0 +1,37 @@
+.profile-container {
+  margin: 40px auto;
+  max-width: 410px;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 2px 18px #1a3e6a22;
+  border-radius: 16px;
+  padding: 38px 30px 34px 30px;
+  text-align: left;
+  min-width: 280px;
+  min-height: 180px;
+  animation: fadeInProfile 1s;
+}
+
+@keyframes fadeInProfile {
+  from { opacity: 0; transform: translateY(60px);}
+  to   { opacity: 1; transform: translateY(0);}
+}
+
+.profile-title {
+  margin-bottom: 22px;
+  color: #1a3366;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #27496d;
+  line-height: 1.4;
+}
+
+.profile-info b {
+  color: #194882;
+  margin-right: 8px;
+}

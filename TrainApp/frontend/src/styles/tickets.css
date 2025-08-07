@@ -1,0 +1,146 @@
+.tickets-container {
+    margin: 0 auto;
+    max-width: 830px;
+    min-height: 600px;
+    padding: 36px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tickets-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1a2947;
+    margin-bottom: 34px;
+    text-shadow: 0 2px 18px #fff9;
+    letter-spacing: 0.5px;
+}
+
+.tickets-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    width : 100%;
+}
+
+@media (max-width: 850px) {
+    .tickets-list { grid-template-columns: 1fr;}
+}
+
+.ticket-card {
+    background: rgba(255,255,255,0.94);
+    border-radius: 20px;
+    box-shadow: 0 4px 22px 0 rgba(30,60,120,0.11);
+    padding: 24px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap:12 px;
+    transition: box-shadow 0.16s, transform 0.14s;
+    min-width: 0;
+}
+
+.ticket-card:hover {
+    box-shadow: 0 8px 34px 0 #397be755;
+    transform: translateY(-3px) scale(1.025);
+}
+
+.ticket-train {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #173a6b;
+    margin-bottom: 4px;
+    letter-spacing: 0.2px;
+}
+
+.ticket-route {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #397be7;
+}
+
+.ticket-info {
+    font-size: 1.05rem;
+    color: #18304b;
+    margin-bottom: 1px;
+}
+
+.ticket-price {
+    color: 217b2b;
+    font-size: 1.14rem;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.ticket-date {
+    color: #4d5870;
+    font-size: 1.06rem;
+    margin-bottom: 1px;
+}
+
+.ticket-empty {
+    color : #b51b35;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 28px;
+}
+
+.tickets-loader {
+    color: #2350a2;
+    font-size: 1.18rem;
+    padding : 20px 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Модальное окно */
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30, 42, 62, 0.38);
+  z-index: 1111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-window {
+  background: #fff;
+  padding: 36px 30px 26px 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 40px 0 #214e8822;
+  min-width: 340px;
+  max-width: 92vw;
+  position: relative;
+  animation: fadeIn 0.33s;
+}
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.14s;
+}
+.modal-close:hover { color: #d9244f; }
+
+.modal-buy-btn {
+  margin-top: 22px;
+  padding: 12px 36px;
+  background: #397be7;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.18rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 16px #274d8b2e;
+  transition: background 0.14s, transform 0.1s;
+}
+.modal-buy-btn:hover {
+  background: #2350a2;
+  transform: scale(1.04);
+}
